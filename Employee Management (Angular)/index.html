@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Employee Management App</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+        <script src="myApp.js"></script>
+        <style>
+            body{
+                width:800px;
+                margin : 100px auto;
+            }
+            input[type="number"]{
+                text-align: right;
+            }
+        </style>
+    </head>
+    <body ng-app="myApp" ng-controller="myController">
+        <table border="0">
+            <tr>
+                <th>Employee Name</th>
+                <th>Designation</th>
+                <th>Base Salary</th>
+                <th>Allowances</th>
+                <th>Total Salary</th>
+            </tr>
+            <tr ng-repeat="record in data">
+                <td><input type="text" ng-model="record.name"/></td>
+                <td><input type="text" ng-model="record.designation"/></td>
+                <td><input type="number" ng-model="record.base"/></td>
+                <td><input type="number" ng-model="record.allowance"/></td>
+                <td ng-model="record.total" align="right" width="150">{{record.base+record.allowance}}</td>
+                <td>[<a href ng-click="removeEmployee($index)">X</a>]</td>
+            </tr>
+            <tr>
+                <td align="center"><a href ng-click="addEmployee()">Add Employee</a></td>
+                <td align="right">Total</td>
+                <td align="right">{{totalBase()}}</td>
+                <td align="right">{{totalAllowance()}}</td>
+                <td align="right">{{totalTotal()}}</td>
+            </tr>
+        </table>
+    </body>
+</html>
