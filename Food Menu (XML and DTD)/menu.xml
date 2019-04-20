@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="style.xsl"?>
+
+<!DOCTYPE menu [
+<!ELEMENT menu (item)>
+<!ELEMENT item (name, type, price)>
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT type (#PCDATA)>
+<!ELEMENT price (#PCDATA)>
+]>
+
+<menu>
+	<item>
+		<name>Pizza</name>
+		<type>Italian</type>
+		<price>99</price>
+	</item>
+	<item>
+		<name>Burger</name>
+		<type>American</type>
+		<price>49</price>
+	</item>
+	<item>
+		<name>Noodles</name>
+		<type>Chinese</type>
+		<price>79</price>
+	</item>
+</menu>
