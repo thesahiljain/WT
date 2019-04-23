@@ -1,0 +1,57 @@
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="script.js"></script>
+	</head>
+	<body>
+		<form id="registrationForm" onsubmit="return onSubmit()">
+			<table>
+				<tr>
+					<td id="formTitle" colspan="2">Registration Form</td>
+				</tr>
+				<tr>
+					<td id="instructions" colspan="2">
+						<ul>
+							<li>Name contains only spaces and alphabets</li>
+							<li>Email, date should be in valid format</li>
+							<li>Contact number must have 10 digits starting with a non-zero digit</li>
+						</ul>
+					</td>
+				</tr>
+				<tr>
+					<td>Name</td>
+					<td><input type="text" name="fullname" placeholder="Enter full name"/><td>
+				</tr>
+				<tr>
+					<td>Date of Birth</td>
+					<td>
+						<input type="text" name="DD" placeholder="DD"/>
+						<input type="text" name="MM" placeholder="MM"/>
+						<input type="text" name="YYYY" placeholder="YYYY"/>
+					</td>
+				</tr>
+				<tr>
+					<td>Gender</td>
+					<td>
+						<input type="radio" name="gender" value="male" checked>Male
+						<input type="radio" name="gender" value="female">Female
+						<input type="radio" name="gender" value="other">Other
+					</td>
+				</tr>
+				<tr>
+					<td>Email</td>
+					<td><input type="text" name='email' placeholder="Enter email address"/></td>
+				</tr>
+				<tr>
+					<td>Contact Number</td>
+					<td><input type="text" name="contact" placeholder="Enter contact number"/></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td><input id="submitButton" type="submit" value="Submit"/></td>
+				</tr>
+			</table>
+		</form>
+	</body>
+</html>

@@ -1,0 +1,35 @@
+#registrationForm {
+	margin:0 auto;
+	width:425px;
+	margin-top:100px;
+	background-color:#f0f0f0;
+	padding : 20px;
+}
+
+td {
+	padding: 3px 5px;
+	font-family:Arial, sans-serif;
+	text-align:left;
+}
+
+#formTitle{
+	text-align:center;
+	font-family:sans-serif;
+	font-size:30px;
+	font-weight:bold;
+	padding:10px;
+}
+
+input{
+	width:250px;
+	padding:5px;
+	font-size:15px;
+}
+
+input[type="radio"] {
+	width:30px;
+}
+
+input[name="DD"], input[name="YYYY"], input[name="MM"]{
+	width:80px;
+}
